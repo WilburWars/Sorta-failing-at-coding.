@@ -1,0 +1,40 @@
+import time
+from os import sys
+
+global score
+global lives
+lives = 3
+def correct():
+  print("Correct!")
+def live_check():
+  if lives == 0:
+    print("Sorry, you have no lives left. Try again next time.")
+    sys.exit(0)
+
+print("Welcome to the Python coding quiz!")
+time.sleep(1)
+start = input("Would you like to do a Easy, intermediate, or expert quiz?")
+
+if start == "Easy":
+  N_Q_1 = input("Question 1, what is the language you are being quized on?")
+  if N_Q_1 == "Python":
+    correct()
+  else:
+    print("Incorrect, the answer is Python")
+    lives = lives - 1
+    live_check()
+  N_Q_2 = input("Question 2, what do you use to state something in Python? A: Print B: Write C: Say")
+  if N_Q_2 == "A" or "a":
+    correct()
+  else:
+    print("Incorrect, the answer is A, print")
+    lives = lives - 1
+    live_check()
+  N_Q_3 = input("Question 3, what do you use to add a delay to your code? A: delay() B: time.sleep() C: sleep()")
+  if N_Q_3 == "B" or "b":
+    correct()
+  else:
+    print("Incorrect, the answer is B, time.sleep()")
+    lives = lives - 1
+    live_check()
+  print("Congratulations! You've completed the easy Python coding quiz! Try the harder quizes next time!")
