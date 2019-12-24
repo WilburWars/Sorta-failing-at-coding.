@@ -1,0 +1,38 @@
+var x = 2
+var y = 2
+var z = true
+var answer = 0
+
+console.log("Welcome to the two number calculator!");
+while (z=true){
+    var x = prompt("What is your first number?")
+    var y = prompt("What is your second number?")
+  op = prompt("What do you want your operation to be? Addition(1), Subtraction(2), Multiplication(3) or Division(4)?");
+  if (op == 'Addition')
+  {
+    var answer = parseInt(x,10) + parseInt(y,10)
+  }
+  if (op == 'Subtraction')
+  {
+    var answer = x - y
+  }
+  if (op == 'Multiplication')
+  {
+    var answer = x * y
+  }
+  if (op == 'Division')
+  {
+    var answer = x / y
+  }
+
+
+  console.log(answer)
+  again = prompt("Do you want another computation? Yes or No?")
+  if (again = 'Yes')
+  {
+    console.log("Great!")
+  }else{
+  console.log("Alright, I'll see you later!")
+  stop()
+  }
+}
