@@ -5,33 +5,34 @@ var answer = 0
 
 console.log("Welcome to the two number calculator!");
 while (z=true){
-    var x = prompt("What is your first number?")
-    var y = prompt("What is your second number?")
-  op = prompt("What do you want your operation to be? Addition(1), Subtraction(2), Multiplication(3) or Division(4)?");
-  if (op == 'Addition')
+    var x = prompt("What is your first integer?")
+    var y = prompt("What is your second integer?")
+  op = prompt("What do you want your operation to be? Addition, Subtraction, Multiplication or Division?");
+  if (op == 'Addition', 'addition')
   {
     var answer = parseInt(x,10) + parseInt(y,10)
   }
-  if (op == 'Subtraction')
+  if (op == 'Subtraction', 'subtraction')
   {
     var answer = x - y
   }
-  if (op == 'Multiplication')
+  if (op == 'Multiplication', 'multiplication')
   {
     var answer = x * y
   }
-  if (op == 'Division')
+  if (op == 'Division', "division")
   {
     var answer = x / y
   }
 
-
   console.log(answer)
   again = prompt("Do you want another computation? Yes or No?")
-  if (again = 'Yes')
+  if (again == 'Yes')
   {
     console.log("Great!")
-  }else{
+  }
+  else
+  {
   console.log("Alright, I'll see you later!")
   stop()
   }
